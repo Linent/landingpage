@@ -1,49 +1,86 @@
+"use client";
+
 import Image from "next/image";
-import { CheckCircle2, MessageCircle, ArrowRight } from "lucide-react";
+import { MessageCircle, ArrowRight } from "lucide-react";
+import { useReveal } from "@/hooks/useReveal";
 
 const bullets = [
   "Evaluacion inicial sin costo",
   "Proceso simple y transparente",
   "Soporte directo por WhatsApp",
 ];
+
 const size = 580;
+
 export const Hero = () => {
+  const textReveal = useReveal();
+  const imageReveal = useReveal();
+
   return (
     <section className="relative overflow-hidden bg-background">
-      {/* Decorative arc element */}
-      
+      {/* Decorative arcs */}
       <div className="pointer-events-none absolute -right-40 -top-40 h-150 w-150 rounded-full border-60 border-accent/10" />
       <div className="pointer-events-none absolute -left-20 bottom-0 h-100 w-100 rounded-full border-40 border-primary/5" />
 
       <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-12 px-6 py-16 lg:flex-row lg:gap-16 lg:py-24">
-        {/* Text content */}
-        <div className="flex flex-1 flex-col items-center text-center lg:items-start lg:text-left">
+        
+        {/* TEXT CONTENT */}
+        <div
+          ref={textReveal.ref}
+          className={`flex flex-1 flex-col items-center text-center lg:items-start lg:text-left reveal ${
+            textReveal.isVisible ? "visible" : ""
+          }`}
+        >
+          {/* Badge */}
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5">
-            <span className="h-2 w-2 rounded-full bg-accent" />
-            <span className="text-xs font-semibold tracking-wide text-accent" style={{ color: "var(--teal)" }}>
+            <Image
+              src="/assets/icon-check.svg"
+              alt="Check"
+              width={16}
+              height={16}
+            />
+            <span className="text-xs font-semibold tracking-wide text-accent">
               Registro de Marcas en Estados Unidos
             </span>
           </div>
 
+          {/* Title */}
           <h1 className="font-[var(--font-poppins)] text-4xl font-extrabold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-[56px]">
             Tu Marca Merece{" "}
             <span className="text-primary">Proteccion Legal</span> en USA
           </h1>
 
+          {/* Description */}
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">
             Te guiamos paso a paso para registrar tu marca sin complicaciones,
             con asesoria clara en espanol y respaldo juridico real.
           </p>
 
+          {/* Bullets */}
           <ul className="mt-8 flex flex-col gap-3">
-            {bullets.map((b) => (
-              <li key={b} className="flex items-center gap-3">
-                <CheckCircle2 className="h-5 w-5 shrink-0 text-accent" />
-                <span className="text-base font-medium text-foreground">{b}</span>
+            {bullets.map((b, i) => (
+              <li
+                key={b}
+                className="flex items-center gap-3 opacity-0 animate-fadeUp"
+                style={{
+                  animationDelay: `${i * 150}ms`,
+                  animationFillMode: "forwards",
+                }}
+              >
+                <Image
+                  src="/assets/icon-check.svg"
+                  alt="Check"
+                  width={20}
+                  height={20}
+                />
+                <span className="text-base font-medium text-foreground">
+                  {b}
+                </span>
               </li>
             ))}
           </ul>
 
+          {/* Buttons */}
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a
               href="#contacto"
@@ -52,6 +89,7 @@ export const Hero = () => {
               Agendar asesoria
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
+
             <a
               href="https://wa.me/15550127842"
               target="_blank"
@@ -68,38 +106,53 @@ export const Hero = () => {
           </p>
         </div>
 
-        {/* Image + Arc */}
-        <div className="relative flex flex-1 items-center justify-center">
-        <div className="absolute -right-6 -top-6 h-full w-full rounded-3xl border-4 border-dashed border-accent/20"/>
-        
-        <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-primary/10">
-          <Image
-            src="/images/equipo-asesores-legales.webp"
-            alt="Equipo legal de MarcaFirme USA en oficina moderna"
-            width={size}
-            height={size}
-            className="object-cover"
-            priority
-          />
+        {/* IMAGE SECTION */}
+        <div
+          ref={imageReveal.ref}
+          className={`relative flex flex-1 items-center justify-center reveal-scale ${
+            imageReveal.isVisible ? "visible" : ""
+          }`}
+        >
+          <div className="absolute -right-6 -top-6 h-full w-full rounded-3xl border-4 border-dashed border-accent/20" />
 
-          {/* 🔥 Gradient blur inferior */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-background via-background/15 to-transparent" />
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-primary/10">
+            <Image
+              src="/images/equipo-asesores-legales.webp"
+              alt="Equipo legal de MarcaFirme USA"
+              width={size}
+              height={size}
+              className="object-cover"
+              priority
+            />
 
-          {/* Overlay card */}
-          <div className="absolute bottom-4 left-4 rounded-xl bg-background/90 px-5 py-3 shadow-lg backdrop-blur-sm">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/20">
-                <CheckCircle2 className="h-5 w-5 text-accent" />
-              </div>
-              <div>
-                <p className="text-sm font-bold text-foreground">+500 marcas</p>
-                <p className="text-xs text-muted-foreground">registradas con exito</p>
+            {/* Gradient blur inferior */}
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background via-background/20 to-transparent" />
+
+            {/* Overlay Card */}
+            <div className="absolute bottom-4 left-4 rounded-xl bg-background/90 px-5 py-3 shadow-lg backdrop-blur-sm">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/20">
+                  <Image
+                    src="/assets/icon-check.svg"
+                    alt="Check"
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div>
+                  <p className="text-sm font-bold text-foreground">
+                    +500 marcas
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    registradas con exito
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
+
       </div>
     </section>
   );
-}
+};

@@ -123,3 +123,140 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Base animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scale animation (para imagen) */
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger reveal cards */
+.reveal-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Services card reveal */
+.reveal-service {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-service.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Glow hover suave */
+.card-glow:hover {
+  box-shadow: 0 20px 40px -10px rgba(6, 88, 246, 0.15);
+}
+
+/* About stats reveal */
+.reveal-stat {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-stat.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Contact form reveal */
+.reveal-contact {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-contact.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Success animation */
+.fade-in-scale {
+  animation: fadeInScale 0.6s ease forwards;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* CTA reveal */
+.reveal-cta {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-cta.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Floating background effect */
+@keyframes floatSlow {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+.float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+/* FAQ reveal */
+.reveal-faq {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-faq.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accordion micro effect */
+.faq-card {
+  transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.08);
+}

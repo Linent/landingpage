@@ -15,20 +15,20 @@ const _poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "MarcaFirme USA | Registro de Marca en Estados Unidos",
+  title: "Registro de Marca en Estados Unidos | MarcaFirme USA",
   description:
-    "Asesoría legal clara para registrar tu marca en USA. Evaluación inicial sin costo y soporte por WhatsApp.",
-  keywords : [
+    "Registra tu marca en Estados Unidos con asesoría legal en español. Evaluación inicial sin costo, proceso transparente y acompañamiento jurídico completo hasta la aprobación.",
+  keywords: [
     "registro de marca en estados unidos",
     "protección de marca en USA",
     "asesoría legal para marcas en USA",
-    "registro de marca sin complicaciones",
-    "registro de marca con asesoría en español",
-    "registro de marca con respaldo jurídico"],
+    "registro de marca en español",
+    "registro USPTO",
+  ],
   openGraph: {
-    title: "MarcaFirme USA | Registro de Marca en Estados Unidos",
+    title: "Registra tu Marca en Estados Unidos | MarcaFirme USA",
     description:
-      "Protege tu marca en Estados Unidos con asesoría legal clara y acompañamiento en español.",
+      "Protege tu marca en USA con asesoría legal en español y respaldo jurídico real. Evaluación inicial sin costo.",
     url: "https://landingpage-three-omega-55.vercel.app",
     siteName: "MarcaFirme USA",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         url: "https://landingpage-three-omega-55.vercel.app/images/og-imagen-asesores-legales.png",
         width: 1200,
         height: 630,
-        alt: "Asesoría legal para registro de marcas en USA",
+        alt: "Registro de Marca en Estados Unidos con asesoría legal en español",
       },
     ],
     locale: "es_US",
@@ -51,18 +51,16 @@ export const metadata: Metadata = {
       follow: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
-      "max-snippet": -1,
     },
   },
   twitter: {
     card: "summary_large_image",
-    title: "MarcaFirme USA | Registro de Marca en Estados Unidos",
+    title: "Registra tu Marca en USA | Evaluación sin costo",
     description:
-      "Evaluación inicial sin costo y soporte directo por WhatsApp.",
+      "Asesoría legal clara en español para registrar tu marca en Estados Unidos.",
     images: [
       "https://landingpage-three-omega-55.vercel.app/images/og-imagen-asesores-legales.png",
     ]
-    
   },
 
   icons: {

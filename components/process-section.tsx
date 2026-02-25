@@ -1,4 +1,7 @@
+"use client";
+
 import { Headphones, Search, FileCheck } from "lucide-react";
+import { useReveal } from "@/hooks/useReveal";
 
 const steps = [
   {
@@ -28,40 +31,66 @@ const steps = [
 ];
 
 export const ProcessSection = () => {
+  const headerReveal = useReveal();
+  const cardsReveal = useReveal();
+
   return (
     <section id="proceso" className="bg-secondary py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="text-center">
+
+        {/* HEADER */}
+        <div
+          ref={headerReveal.ref}
+          className={`text-center reveal ${
+            headerReveal.isVisible ? "visible" : ""
+          }`}
+        >
           <span className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-primary">
-            Proceso
+            El Proceso
           </span>
+
           <h2 className="mt-4 font-[var(--font-poppins)] text-3xl font-bold text-foreground sm:text-4xl">
-            {"¿Como funciona?"}
+            ¿Como funciona?
           </h2>
+
           <p className="mt-3 text-lg text-muted-foreground">
             Tres pasos claros para proteger tu marca sin complicaciones.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
-          {steps.map((step) => (
+        {/* CARDS */}
+        <div
+          ref={cardsReveal.ref}
+          className="mt-16 grid gap-8 md:grid-cols-3"
+        >
+          {steps.map((step, i) => (
             <div
               key={step.number}
-              className="group relative rounded-2xl border border-border/50 bg-card p-8 shadow-sm transition-all hover:border-accent/40 hover:shadow-md"
+              className={`group relative rounded-2xl border border-border/50 bg-card p-8 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-accent/40 hover:shadow-xl reveal-card ${
+                cardsReveal.isVisible ? "visible" : ""
+              }`}
+              style={{
+                transitionDelay: `${i * 200}ms`,
+              }}
             >
               {/* Step number */}
               <span className="absolute -top-4 right-6 rounded-full bg-accent px-3 py-1 text-xs font-bold text-accent-foreground">
                 {step.number}
               </span>
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10">
+
+              {/* Icon */}
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20">
                 <step.icon className="h-7 w-7 text-primary" />
               </div>
+
               <h3 className="mt-5 font-[var(--font-poppins)] text-xl font-bold text-card-foreground">
                 {step.title}
               </h3>
-              <p className="mt-1 text-sm font-semibold text-accent" style={{ color: "var(--teal)" }}>
+
+              <p className="mt-1 text-sm font-semibold text-accent">
                 {step.subtitle}
               </p>
+
               <p className="mt-3 leading-relaxed text-muted-foreground">
                 {step.description}
               </p>
@@ -71,4 +100,4 @@ export const ProcessSection = () => {
       </div>
     </section>
   );
-}
+};
