@@ -18,7 +18,33 @@ export const metadata: Metadata = {
   title: "MarcaFirme USA | Registro de Marca en Estados Unidos",
   description:
     "Asesoría legal clara para registrar tu marca en USA. Evaluación inicial sin costo y soporte por WhatsApp.",
-  generator: "v0.app",
+
+  openGraph: {
+    title: "MarcaFirme USA | Registro de Marca en Estados Unidos",
+    description:
+      "Protege tu marca en Estados Unidos con asesoría legal clara y acompañamiento en español.",
+    url: "landingpage-three-omega-55.vercel.app",
+    siteName: "MarcaFirme USA",
+    images: [
+      {
+        url: "/images//images/equipo-asesores-legales.webp",
+        width: 1200,
+        height: 630,
+        alt: "Asesoría legal para registro de marcas en USA",
+      },
+    ],
+    locale: "es_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "MarcaFirme USA | Registro de Marca en Estados Unidos",
+    description:
+      "Evaluación inicial sin costo y soporte directo por WhatsApp.",
+    images: ["/images//images/equipo-asesores-legales.webp"],
+  },
+
   icons: {
     icon: [
       {
@@ -36,7 +62,7 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
-};
+};;
 
 export const viewport: Viewport = {
   themeColor: "#0658F6",
