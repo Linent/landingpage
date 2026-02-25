@@ -18,7 +18,13 @@ export const metadata: Metadata = {
   title: "MarcaFirme USA | Registro de Marca en Estados Unidos",
   description:
     "Asesoría legal clara para registrar tu marca en USA. Evaluación inicial sin costo y soporte por WhatsApp.",
-
+  keywords : [
+    "registro de marca en estados unidos",
+    "protección de marca en USA",
+    "asesoría legal para marcas en USA",
+    "registro de marca sin complicaciones",
+    "registro de marca con asesoría en español",
+    "registro de marca con respaldo jurídico"],
   openGraph: {
     title: "MarcaFirme USA | Registro de Marca en Estados Unidos",
     description:
@@ -27,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "MarcaFirme USA",
     images: [
       {
-        url: "https://landingpage-three-omega-55.vercel.app/images/equipo-asesores.png",
+        url: "https://landingpage-three-omega-55.vercel.app/images/og-imagen-asesores-legales.png",
         width: 1200,
         height: 630,
         alt: "Asesoría legal para registro de marcas en USA",
@@ -36,15 +42,27 @@ export const metadata: Metadata = {
     locale: "es_US",
     type: "website",
   },
-
+  robots: { 
+    index: true, 
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   twitter: {
     card: "summary_large_image",
     title: "MarcaFirme USA | Registro de Marca en Estados Unidos",
     description:
       "Evaluación inicial sin costo y soporte directo por WhatsApp.",
     images: [
-      "https://landingpage-three-omega-55.vercel.app/images/equipo-asesores.png",
-    ],
+      "https://landingpage-three-omega-55.vercel.app/images/og-imagen-asesores-legales.png",
+    ]
+    
   },
 
   icons: {
