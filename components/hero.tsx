@@ -32,7 +32,7 @@ export const Hero = () => {
         >
           {/* Badge */}
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5">
-            <CheckCircle2 className="h-4 w-4 text-accent" />
+            <img src="/assets/icon-512.png" alt="icon" width={20} height={20} className="h-5 w-5 text-accent" />
             <span className="text-xs font-semibold tracking-wide text-accent">
               Registro de Marcas en Estados Unidos
             </span>
