@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "MarcaFirme USA",
     images: [
       {
-        url: "https://landingpage-three-omega-55.vercel.app/images/equipo-asesores-legales.png",
+        url: "https://landingpage-three-omega-55.vercel.app/images/equipo-asesores.png",
         width: 1200,
         height: 630,
         alt: "Asesoría legal para registro de marcas en USA",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     description:
       "Evaluación inicial sin costo y soporte directo por WhatsApp.",
     images: [
-      "https://landingpage-three-omega-55.vercel.app/images/equipo-asesores-legales.png",
+      "https://landingpage-three-omega-55.vercel.app/images/equipo-asesores.png",
     ],
   },
 
