@@ -57,7 +57,8 @@ export const Hero = () => {
 
           {/* Bullets */}
           <ul className="mt-8 flex flex-col gap-3">
-            {bullets.map((b) => (<li key={b} className="flex items-center gap-3"> <Image src="/assets/icon-check.svg" alt="Check" width={20} height={20} className="h-5 w-5 text-accent" />
+            {bullets.map((b) => (<li key={b} className="flex items-center gap-3"> 
+              <Image src="/assets/icon-check.svg" alt="Check" width={20} height={20} className="h-5 w-5 text-accent" />
               <span className="text-base font-medium text-foreground">{b}</span>
             </li>))} </ul>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -90,7 +91,7 @@ export const Hero = () => {
             />
 
             {/* Gradient blur inferior */}
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background via-background/20 to-transparent" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background via-background/35 to-transparent" />
 
             {/* Overlay Card */}
             <div className="absolute bottom-4 left-4 rounded-xl bg-background/90 px-5 py-3 shadow-lg backdrop-blur-sm">

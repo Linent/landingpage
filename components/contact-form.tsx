@@ -1,4 +1,11 @@
 "use client";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 import { useState } from "react";
 import { Send, MapPin, Phone, Mail, Clock } from "lucide-react";
@@ -30,9 +37,8 @@ export const ContactForm = () => {
           {/* LEFT SIDE */}
           <div
             ref={leftReveal.ref}
-            className={`reveal ${
-              leftReveal.isVisible ? "visible" : ""
-            }`}
+            className={`reveal ${leftReveal.isVisible ? "visible" : ""
+              }`}
           >
             <span className="inline-block rounded-full bg-accent/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-accent">
               Contacto
@@ -78,9 +84,8 @@ export const ContactForm = () => {
           {/* FORM SIDE */}
           <div
             ref={formReveal.ref}
-            className={`rounded-2xl border border-border/50 bg-card p-8 shadow-lg reveal-contact ${
-              formReveal.isVisible ? "visible" : ""
-            }`}
+            className={`rounded-2xl border border-border/50 bg-card p-8 shadow-lg reveal-contact ${formReveal.isVisible ? "visible" : ""
+              }`}
           >
             {submitted ? (
               <div className="flex flex-col items-center py-12 text-center fade-in-scale">
@@ -96,53 +101,56 @@ export const ContactForm = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+
                 {["Nombre completo", "Correo electronico", "Telefono"].map(
                   (label, i) => (
                     <div key={label}>
                       <label className="mb-1.5 block text-sm font-medium text-foreground">
                         {label} <span className="text-destructive">*</span>
                       </label>
+
                       <input
                         required
                         type={i === 1 ? "email" : i === 2 ? "tel" : "text"}
-                        placeholder={`Ej: ${
-                          i === 0
+                        placeholder={`Ej: ${i === 0
                             ? "Maria Lopez"
                             : i === 1
-                            ? "maria@ejemplo.com"
-                            : "+1 (555) 000-0000"
-                        }`}
-                        className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground transition-all focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                              ? "maria@ejemplo.com"
+                              : "+1 (555) 000-0000"
+                          }`}
+                        className="w-full h-12 rounded-xl border border-input bg-background px-4 text-sm text-foreground placeholder:text-muted-foreground transition-all focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                       />
                     </div>
                   )
                 )}
 
+                {/* Servicio */}
                 <div>
                   <label className="mb-1.5 block text-sm font-medium text-foreground">
                     Servicio <span className="text-destructive">*</span>
                   </label>
-                  <select
-                    required
-                    className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground transition-all focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
-                    defaultValue=""
-                  >
-                    <option value="" disabled>
-                      Selecciona un servicio
-                    </option>
-                    {serviceOptions.map((s) => (
-                      <option key={s} value={s}>
-                        {s}
-                      </option>
-                    ))}
-                  </select>
+
+                  <Select required>
+                    <SelectTrigger className="w-full h-12 rounded-xl border border-input bg-background px-4 text-sm transition-all focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                      <SelectValue placeholder="Selecciona un servicio" />
+                    </SelectTrigger>
+
+                    <SelectContent>
+                      {serviceOptions.map((s) => (
+                        <SelectItem key={s} value={s}>
+                          {s}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 </div>
 
+                {/* Política */}
                 <label className="flex items-start gap-3 text-sm">
                   <input
                     type="checkbox"
                     required
-                    className="mt-0.5 h-4 w-4 rounded border-input accent-primary"
+                    className="mt-1 h-4 w-4 rounded border-input accent-primary"
                   />
                   <span className="text-muted-foreground">
                     Acepto la{" "}
@@ -152,13 +160,15 @@ export const ContactForm = () => {
                   </span>
                 </label>
 
+                {/* Botón homogéneo */}
                 <button
                   type="submit"
-                  className="mt-2 flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-base font-semibold text-accent-foreground shadow-lg shadow-accent/25 transition-all hover:brightness-110 hover:-translate-y-1"
+                  className="mt-2 h-12 w-full flex items-center justify-center gap-2 rounded-xl bg-accent px-6 text-sm font-semibold text-accent-foreground shadow-lg shadow-accent/25 transition-all hover:brightness-110 hover:-translate-y-1"
                 >
                   <Send className="h-4 w-4" />
                   Solicitar evaluacion
                 </button>
+
               </form>
             )}
           </div>
