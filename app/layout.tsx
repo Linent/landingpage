@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/equipo-asesores-legales.webp",
-        width: 1200,
-        height: 630,
+        width: 832,
+        height: 832,
         alt: "Asesoría legal para registro de marcas en USA",
       },
     ],
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "MarcaFirme USA | Registro de Marca en Estados Unidos",
     description:
       "Evaluación inicial sin costo y soporte directo por WhatsApp.",
-    images: ["/images/equipo-asesores-legales.webp"],
+    images: "/images/equipo-asesores-legales.webp",
   },
 
   icons: {
