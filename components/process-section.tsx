@@ -18,7 +18,7 @@ const steps = [
     title: "Busqueda y Estrategia",
     subtitle: "Analisis profundo",
     description:
-      "Revisamos bases de datos federales, detectamos riesgos y disenamos la mejor ruta de registro.",
+      "Revisamos bases de datos federales, detectamos riesgos y diseñamos la mejor ruta de registro.",
   },
   {
     number: "03",

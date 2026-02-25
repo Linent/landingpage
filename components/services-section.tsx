@@ -64,7 +64,7 @@ export const ServicesSection = () => {
           </h2>
 
           <p className="mx-auto mt-3 max-w-2xl text-lg text-muted-foreground">
-            Soluciones legales integrales disenadas para emprendedores y
+            Soluciones legales integrales diseñadas para emprendedores y
             empresas que quieren operar con confianza en Estados Unidos.
           </p>
         </div>
