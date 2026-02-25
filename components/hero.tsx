@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { MessageCircle, ArrowRight } from "lucide-react";
+import { MessageCircle, ArrowRight, CheckCircle2 } from "lucide-react";
 import { useReveal } from "@/hooks/useReveal";
 
 const bullets = [
@@ -32,12 +32,7 @@ export const Hero = () => {
         >
           {/* Badge */}
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5">
-            <Image
-              src="/assets/icon-check.svg"
-              alt="Check"
-              width={16}
-              height={16}
-            />
+            <CheckCircle2 className="h-4 w-4 text-accent" />
             <span className="text-xs font-semibold tracking-wide text-accent">
               Registro de Marcas en Estados Unidos
             </span>
