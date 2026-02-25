@@ -6,11 +6,12 @@ const bullets = [
   "Proceso simple y transparente",
   "Soporte directo por WhatsApp",
 ];
-const size = 600;
+const size = 580;
 export const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-background">
       {/* Decorative arc element */}
+      
       <div className="pointer-events-none absolute -right-40 -top-40 h-150 w-150 rounded-full border-60 border-accent/10" />
       <div className="pointer-events-none absolute -left-20 bottom-0 h-100 w-100 rounded-full border-40 border-primary/5" />
 
@@ -68,6 +69,9 @@ export const Hero = () => {
         </div>
 
         {/* Image + Arc */}
+        <div className="relative flex flex-1 items-center justify-center">
+        <div className="absolute -right-6 -top-6 h-full w-full rounded-3xl border-4 border-dashed border-accent/20"/>
+        
         <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-primary/10">
           <Image
             src="/images/equipo-asesores-legales.webp"
@@ -93,6 +97,7 @@ export const Hero = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
