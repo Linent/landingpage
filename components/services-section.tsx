@@ -31,7 +31,7 @@ const services = [
   },
 ];
 
-export function ServicesSection() {
+export const ServicesSection = () => {
   return (
     <section id="servicios" className="bg-background py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6">
@@ -54,7 +54,7 @@ export function ServicesSection() {
               key={service.title}
               className={`group relative flex flex-col rounded-2xl border p-7 transition-all hover:shadow-lg ${
                 service.highlight
-                  ? "border-accent/40 bg-primary/[0.02] shadow-md"
+                  ? "border-accent/40 bg-primary/2 shadow-md"
                   : "border-border/50 bg-card shadow-sm"
               }`}
             >

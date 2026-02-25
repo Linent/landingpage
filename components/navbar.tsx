@@ -10,7 +10,7 @@ const navLinks = [
   { label: "Contacto", href: "#contacto" },
 ];
 
-export function Navbar() {
+export const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (

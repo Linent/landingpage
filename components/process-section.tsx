@@ -27,7 +27,7 @@ const steps = [
   },
 ];
 
-export function ProcessSection() {
+export const ProcessSection = () => {
   return (
     <section id="proceso" className="bg-secondary py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6">

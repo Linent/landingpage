@@ -10,13 +10,13 @@ const serviceOptions = [
   "Oposicion",
 ];
 
-export function ContactForm() {
+export const ContactForm = () =>{
   const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitted(true);
-  }
+  };
 
   return (
     <section id="contacto" className="bg-background py-20 lg:py-28">

@@ -7,7 +7,7 @@ const stats = [
   { icon: Clock, value: "24h", label: "Tiempo de respuesta" },
 ];
 
-export function AboutSection() {
+export const AboutSection =() => {
   return (
     <section className="bg-secondary py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6">

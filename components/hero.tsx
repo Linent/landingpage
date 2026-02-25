@@ -6,13 +6,13 @@ const bullets = [
   "Proceso simple y transparente",
   "Soporte directo por WhatsApp",
 ];
-
-export function Hero() {
+const size = 600;
+export const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-background">
       {/* Decorative arc element */}
-      <div className="pointer-events-none absolute -right-40 -top-40 h-[600px] w-[600px] rounded-full border-[60px] border-accent/10" />
-      <div className="pointer-events-none absolute -left-20 bottom-0 h-[400px] w-[400px] rounded-full border-[40px] border-primary/5" />
+      <div className="pointer-events-none absolute -right-40 -top-40 h-150 w-150 rounded-full border-60 border-accent/10" />
+      <div className="pointer-events-none absolute -left-20 bottom-0 h-100 w-100 rounded-full border-40 border-primary/5" />
 
       <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-12 px-6 py-16 lg:flex-row lg:gap-16 lg:py-24">
         {/* Text content */}
@@ -68,28 +68,28 @@ export function Hero() {
         </div>
 
         {/* Image + Arc */}
-        <div className="relative flex flex-1 items-center justify-center">
-          {/* Arc decorative */}
-          <div className="absolute -right-6 -top-6 h-full w-full rounded-3xl border-4 border-dashed border-accent/20" />
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-primary/10">
-            <Image
-              src="/images/hero-trademark.jpg"
-              alt="Equipo legal de MarcaFirme USA en oficina moderna"
-              width={580}
-              height={420}
-              className="object-cover"
-              priority
-            />
-            {/* Overlay card */}
-            <div className="absolute bottom-4 left-4 rounded-xl bg-background/90 px-5 py-3 shadow-lg backdrop-blur-sm">
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/20">
-                  <CheckCircle2 className="h-5 w-5 text-accent" />
-                </div>
-                <div>
-                  <p className="text-sm font-bold text-foreground">+500 marcas</p>
-                  <p className="text-xs text-muted-foreground">registradas con exito</p>
-                </div>
+        <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-primary/10">
+          <Image
+            src="/images/equipo-asesores-legales.webp"
+            alt="Equipo legal de MarcaFirme USA en oficina moderna"
+            width={size}
+            height={size}
+            className="object-cover"
+            priority
+          />
+
+          {/* 🔥 Gradient blur inferior */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-background via-background/15 to-transparent" />
+
+          {/* Overlay card */}
+          <div className="absolute bottom-4 left-4 rounded-xl bg-background/90 px-5 py-3 shadow-lg backdrop-blur-sm">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/20">
+                <CheckCircle2 className="h-5 w-5 text-accent" />
+              </div>
+              <div>
+                <p className="text-sm font-bold text-foreground">+500 marcas</p>
+                <p className="text-xs text-muted-foreground">registradas con exito</p>
               </div>
             </div>
           </div>

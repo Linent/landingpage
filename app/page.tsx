@@ -13,12 +13,12 @@ export default function Page() {
     <main>
       <Navbar />
       <Hero />
-      <ServicesSection />
       <ProcessSection />
+      <ServicesSection />
       <AboutSection />
-      <FaqSection />
-      <CtaBanner />
       <ContactForm />
+      <CtaBanner />
+      <FaqSection />
       <Footer />
     </main>
   );

@@ -1,11 +1,11 @@
 import { ArrowRight, MessageCircle } from "lucide-react";
 
-export function CtaBanner() {
+export const CtaBanner = () => {
   return (
     <section className="relative overflow-hidden bg-primary py-16 lg:py-20">
       {/* Decorative arcs */}
-      <div className="pointer-events-none absolute -left-20 -top-20 h-[300px] w-[300px] rounded-full border-[40px] border-primary-foreground/5" />
-      <div className="pointer-events-none absolute -bottom-10 -right-10 h-[200px] w-[200px] rounded-full border-[30px] border-accent/20" />
+      <div className="pointer-events-none absolute -left-20 -top-20 h-75 w-75 rounded-full border-40 border-primary-foreground/5" />
+      <div className="pointer-events-none absolute -bottom-10 -right-10 h-50 w-50 rounded-full border-30 border-accent/20" />
 
       <div className="relative mx-auto max-w-4xl px-6 text-center">
         <h2 className="font-[var(--font-poppins)] text-3xl font-bold text-primary-foreground sm:text-4xl">

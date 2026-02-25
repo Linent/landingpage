@@ -23,19 +23,9 @@ const faqs = [
     answer:
       "Si. Muchos de nuestros clientes operan desde Latinoamerica. Evaluamos tu caso y te guiamos durante todo el proceso sin importar tu ubicacion.",
   },
-  {
-    question: "¿Que incluye la evaluacion inicial?",
-    answer:
-      "Revisamos tu marca, analizamos posibles conflictos, evaluamos la viabilidad del registro y te damos una hoja de ruta clara. Todo esto en una llamada de 15 minutos sin costo.",
-  },
-  {
-    question: "¿Que pasa si mi marca es rechazada?",
-    answer:
-      "Analizamos los motivos del rechazo y evaluamos opciones como enmiendas, argumentos legales o nuevas estrategias de registro. No te dejamos solo en ningun momento.",
-  },
 ];
 
-export function FaqSection() {
+export const FaqSection = () => {
   return (
     <section id="faq" className="bg-secondary py-20 lg:py-28">
       <div className="mx-auto max-w-3xl px-6">
