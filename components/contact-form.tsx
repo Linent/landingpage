@@ -13,7 +13,7 @@ import { useReveal } from "@/hooks/useReveal";
 
 const serviceOptions = [
   "Registro de Marca",
-  "Renovacion",
+  "Renovación",
   "Vigilancia",
   "Oposicion",
 ];
@@ -45,11 +45,11 @@ export const ContactForm = () => {
             </span>
 
             <h2 className="mt-4 font-[var(--font-poppins)] text-3xl font-bold text-foreground sm:text-4xl">
-              Evaluacion rapida y sin compromiso
+              Evaluación rapida y sin compromiso
             </h2>
 
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              Dejanos tus datos y te contactamos hoy o el siguiente dia habil.
+              Dejanos tus datos y te contactamos hoy o el siguiente día habil.
               Tu marca no puede esperar.
             </p>
 
@@ -58,7 +58,7 @@ export const ContactForm = () => {
                 { icon: Phone, title: "WhatsApp", value: "+1 (555) 012-7842" },
                 { icon: Mail, title: "Correo", value: "hola@marcafirmeusa.com" },
                 { icon: Clock, title: "Horario", value: "Lun a Vie: 9:00 AM – 6:00 PM (ET)" },
-                { icon: MapPin, title: "Direccion", value: "1200 Brickell Ave, Suite 900, Miami, FL 33131" },
+                { icon: MapPin, title: "Dirección", value: "1200 Brickell Ave, Suite 900, Miami, FL 33131" },
               ].map((item, i) => (
                 <div
                   key={item.title}
@@ -96,13 +96,13 @@ export const ContactForm = () => {
                   ¡Solicitud enviada!
                 </h3>
                 <p className="mt-2 max-w-xs text-muted-foreground">
-                  Revisaremos tu informacion y te contactaremos a la brevedad.
+                  Revisaremos tu información y te contactaremos a la brevedad.
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-5">
 
-                {["Nombre completo", "Correo electronico", "Telefono"].map(
+                {["Nombre completo", "Correo electronico", "Teléfono"].map(
                   (label, i) => (
                     <div key={label}>
                       <label className="mb-1.5 block text-sm font-medium text-foreground">
@@ -166,7 +166,7 @@ export const ContactForm = () => {
                   className="mt-2 h-12 w-full flex items-center justify-center gap-2 rounded-xl bg-accent px-6 text-sm font-semibold text-accent-foreground shadow-lg shadow-accent/25 transition-all hover:brightness-110 hover:-translate-y-1"
                 >
                   <Send className="h-4 w-4" />
-                  Solicitar evaluacion
+                  Solicitar evaluación
                 </button>
 
               </form>

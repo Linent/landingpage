@@ -10,9 +10,9 @@ import { useReveal } from "@/hooks/useReveal";
 
 const faqs = [
   {
-    question: "¿Cuanto tiempo toma el proceso de registro?",
+    question: "¿Cuánto tiempo toma el proceso de registro?",
     answer:
-      "Depende de cada caso. En la asesoria inicial te damos un estimado claro y personalizado segun tu situacion. Te explicamos cada etapa del proceso para que tengas expectativas realistas desde el inicio.",
+      "Depende de cada caso. En la asesoría inicial te damos un estimado claro y personalizado segun tu situacion. Te explicamos cada etapa del proceso para que tengas expectativas realistas desde el inicio.",
   },
   {
     question: "¿Necesito una LLC para registrar mi marca?",
@@ -22,17 +22,17 @@ const faqs = [
   {
     question: "¿Puedo registrar mi marca si estoy fuera de Estados Unidos?",
     answer:
-      "Si. Muchos de nuestros clientes operan desde Latinoamerica u otros paises. Evaluamos tu caso y te guiamos durante todo el proceso sin importar tu ubicacion.",
+      "Si. Muchos de nuestros clientes operan desde Latinoamerica u otros países. Evaluamos tu caso y te guiamos durante todo el proceso sin importar tu ubicacion.",
   },
   {
-    question: "¿Que pasa si mi marca ya esta registrada?",
+    question: "¿Qué pasa si mi marca ya está registrada?",
     answer:
-      "Antes de iniciar el proceso realizamos una busqueda preliminar para evaluar la disponibilidad de tu marca. Si detectamos posibles conflictos, te asesoramos sobre alternativas o ajustes para reducir el riesgo de rechazo ante la USPTO.",
+      "Antes de iniciar el proceso realizamos una búsqueda preliminar para evaluar la disponibilidad de tu marca. Si detectamos posibles conflictos, te asesoramos sobre alternativas o ajustes para reducir el riesgo de rechazo ante la USPTO.",
   },
   {
-    question: "¿Que incluye exactamente el servicio de registro?",
+    question: "¿Qué incluye exactamente el servicio de registro?",
     answer:
-      "Nuestro servicio incluye evaluacion inicial, busqueda de antecedentes, preparacion y presentacion de la solicitud ante la USPTO, seguimiento del proceso y respuesta a requerimientos oficiales. Te acompanamos hasta obtener una resolucion.",
+      "Nuestro servicio incluye evaluación inicial, búsqueda de antecedentes, preparacion y presentacion de la solicitud ante la USPTO, seguimiento del proceso y respuesta a requerimientos oficiales. Te acompanamos hasta obtener una resolucion.",
   },
 ];
 

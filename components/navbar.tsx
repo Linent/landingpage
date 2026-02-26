@@ -40,7 +40,7 @@ export const Navbar = () => {
           href="#contacto"
           className="hidden rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground transition-all hover:brightness-110 md:inline-flex"
         >
-          Agendar asesoria
+          Agendar asesoría
         </a>
 
         {/* Mobile toggle */}
@@ -74,7 +74,7 @@ export const Navbar = () => {
             onClick={() => setMobileOpen(false)}
             className="mt-4 block w-full rounded-lg bg-accent px-5 py-2.5 text-center text-sm font-semibold text-accent-foreground transition-all hover:brightness-110"
           >
-            Agendar asesoria
+            Agendar asesoría
           </a>
         </div>
       )}

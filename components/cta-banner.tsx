@@ -27,8 +27,7 @@ export const CtaBanner = () => {
         </h2>
 
         <p className="mt-4 text-lg text-primary-foreground/80">
-          Agenda tu asesoria gratuita hoy y da el primer paso hacia la
-          proteccion legal de tu negocio en Estados Unidos.
+          Agenda tu asesoría gratuita hoy y da el primer paso hacia la protección legal de tu negocio en Estados Unidos.
         </p>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -38,7 +37,7 @@ export const CtaBanner = () => {
             href="#contacto"
             className="group relative inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-accent-foreground shadow-lg shadow-accent/25 transition-all duration-300 hover:-translate-y-1 hover:brightness-110"
           >
-            Agendar asesoria gratis
+            Agendar asesoría gratis
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </a>
 

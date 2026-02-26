@@ -6,8 +6,8 @@ import { useCounter } from "@/hooks/useCounter";
 
 const stats = [
   { icon: Users, value: 500, suffix: "+", label: "Marcas registradas" },
-  { icon: Award, value: 98, suffix: "%", label: "Tasa de aprobacion" },
-  { icon: Globe, value: 15, suffix: "+", label: "Paises de origen" },
+  { icon: Award, value: 98, suffix: "%", label: "Tasa de aprobación" },
+  { icon: Globe, value: 15, suffix: "+", label: "Países de origen" },
   { icon: Clock, value: 24, suffix: "h", label: "Tiempo de respuesta" },
 ];
 
@@ -43,8 +43,8 @@ export const AboutSection = () => {
 
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               Nuestro equipo combina experiencia legal con un enfoque humano:
-              sabemos que detras de cada marca hay un sueno, un esfuerzo y una
-              historia que merece proteccion.
+              sabemos que detrás de cada marca hay un sueño, un esfuerzo y una
+              historia que merece protección.
             </p>
 
             <a

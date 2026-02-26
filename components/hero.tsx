@@ -5,7 +5,7 @@ import { MessageCircle, ArrowRight, CheckCircle2 } from "lucide-react";
 import { useReveal } from "@/hooks/useReveal";
 
 const bullets = [
-  "Evaluacion inicial sin costo",
+  "Evaluación inicial sin costo",
   "Proceso simple y transparente",
   "Soporte directo por WhatsApp",
 ];
@@ -41,13 +41,12 @@ export const Hero = () => {
           {/* Title */}
           <h1 className="font-[var(--font-poppins)] text-4xl font-extrabold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-[56px]">
             Tu Marca Merece{" "}
-            <span className="text-primary">Proteccion Legal</span> en USA
+            <span className="text-primary">Protección Legal</span> en USA
           </h1>
 
           {/* Description */}
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Te guiamos paso a paso para registrar tu marca sin complicaciones,
-            con asesoria clara en español y respaldo juridico real.
+            Te guiamos paso a paso para registrar tu marca sin complicaciones, con asesoría clara en español y respaldo jurídico real.
           </p>
 
           {/* Bullets */}
@@ -58,7 +57,7 @@ export const Hero = () => {
             </li>))} </ul>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a href="#contacto" className="group inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-accent-foreground shadow-lg shadow-accent/25 transition-all hover:brightness-110" >
-              Agendar asesoria
+              Agendar asesoría
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a href="https://wa.me/15550127842" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-primary/20 bg-primary/5 px-7 py-3.5 text-base font-semibold text-primary transition-all hover:border-primary/40 hover:bg-primary/10" >
@@ -104,7 +103,7 @@ export const Hero = () => {
                     +500 marcas
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    registradas con exito
+                    registradas con éxito
                   </p>
                 </div>
               </div>

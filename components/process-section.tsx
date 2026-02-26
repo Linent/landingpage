@@ -7,7 +7,7 @@ const steps = [
   {
     number: "01",
     icon: Headphones,
-    title: "Asesoria Inicial",
+    title: "Asesoría Inicial",
     subtitle: "15 minutos",
     description:
       "Conversamos sobre tu marca, tu negocio y tus objetivos. Evaluamos viabilidad sin compromiso.",
@@ -15,16 +15,16 @@ const steps = [
   {
     number: "02",
     icon: Search,
-    title: "Busqueda y Estrategia",
-    subtitle: "Analisis profundo",
+    title: "Búsqueda y Estrategia",
+    subtitle: "Análisis profundo",
     description:
       "Revisamos bases de datos federales, detectamos riesgos y diseñamos la mejor ruta de registro.",
   },
   {
     number: "03",
     icon: FileCheck,
-    title: "Radicacion y Seguimiento",
-    subtitle: "Acompanamiento total",
+    title: "Radicación y Seguimiento",
+    subtitle: "Acompañamiento total",
     description:
       "Presentamos tu solicitud ante la USPTO y te mantenemos informado en cada etapa del proceso.",
   },
@@ -50,7 +50,7 @@ export const ProcessSection = () => {
           </span>
 
           <h2 className="mt-4 font-[var(--font-poppins)] text-3xl font-bold text-foreground sm:text-4xl">
-            ¿Como funciona?
+            ¿Cómo funciona?
           </h2>
 
           <p className="mt-3 text-lg text-muted-foreground">

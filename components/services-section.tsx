@@ -14,12 +14,12 @@ const services = [
     icon: ShieldCheck,
     title: "Registro de Marca",
     description:
-      "Te acompanamos desde la revision inicial hasta la radicacion oficial ante la USPTO. Sin letra pequena ni sorpresas.",
+      "Te acompanamos desde la revision inicial hasta la radicación oficial ante la USPTO. Sin letra pequena ni sorpresas.",
     highlight: true,
   },
   {
     icon: RefreshCw,
-    title: "Renovacion",
+    title: "Renovación",
     description:
       "Evita perder tu marca por fechas vencidas o requisitos pendientes. Nos encargamos del calendario y los tramites.",
     highlight: false,
@@ -116,7 +116,7 @@ export const ServicesSection = () => {
                 href="#contacto"
                 className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
               >
-                Solicitar informacion
+                Solicitar información
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
