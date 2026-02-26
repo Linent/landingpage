@@ -40,8 +40,8 @@ export const Hero = () => {
 
           {/* Title */}
           <h1 className="font-[var(--font-poppins)] text-4xl font-extrabold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-[56px]">
-            Tu Marca Merece{" "}
-            <span className="text-primary">Protección Legal</span> en USA
+            Tu marca merece{" "}
+            <span className="text-primary">protección legal</span> en USA
           </h1>
 
           {/* Description */}

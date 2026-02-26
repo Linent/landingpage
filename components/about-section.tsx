@@ -38,7 +38,7 @@ export const AboutSection = () => {
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
               En MarcaFirme USA simplificamos el registro de marcas para
               emprendedores y empresas. Sin tecnicismos innecesarios, con
-              comunicacion directa y procesos ordenados que respetan tu tiempo.
+              comunicación directa y procesos ordenados que respetan tu tiempo.
             </p>
 
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">

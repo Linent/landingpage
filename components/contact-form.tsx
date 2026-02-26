@@ -102,7 +102,7 @@ export const ContactForm = () => {
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-5">
 
-                {["Nombre completo", "Correo electronico", "Teléfono"].map(
+                {["Nombre completo", "Correo electrónico", "Teléfono"].map(
                   (label, i) => (
                     <div key={label}>
                       <label className="mb-1.5 block text-sm font-medium text-foreground">

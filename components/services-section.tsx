@@ -14,7 +14,7 @@ const services = [
     icon: ShieldCheck,
     title: "Registro de Marca",
     description:
-      "Te acompanamos desde la revision inicial hasta la radicación oficial ante la USPTO. Sin letra pequena ni sorpresas.",
+      "Te acompañamos desde la revision inicial hasta la radicación oficial ante la USPTO. Sin letra pequeña ni sorpresas.",
     highlight: true,
   },
   {
