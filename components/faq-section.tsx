@@ -12,17 +12,17 @@ const faqs = [
   {
     question: "¿Cuánto tiempo toma el proceso de registro?",
     answer:
-      "Depende de cada caso. En la asesoría inicial te damos un estimado claro y personalizado segun tu situacion. Te explicamos cada etapa del proceso para que tengas expectativas realistas desde el inicio.",
+      "Depende de cada caso. En la asesoría inicial te damos un estimado claro y personalizado según tu situación. Te explicamos cada etapa del proceso para que tengas expectativas realistas desde el inicio.",
   },
   {
     question: "¿Necesito una LLC para registrar mi marca?",
     answer:
-      "No siempre. Puedes registrar una marca como persona natural o como entidad comercial. Te orientamos segun tu situacion particular para elegir la opcion mas conveniente y segura.",
+      "No siempre. Puedes registrar una marca como persona natural o como entidad comercial. Te orientamos según tu situación particular para elegir la opción más conveniente y segura.",
   },
   {
     question: "¿Puedo registrar mi marca si estoy fuera de Estados Unidos?",
     answer:
-      "Si. Muchos de nuestros clientes operan desde Latinoamerica u otros países. Evaluamos tu caso y te guiamos durante todo el proceso sin importar tu ubicacion.",
+      "Sí. Muchos de nuestros clientes operan desde Latinoamérica u otros países. Evaluamos tu caso y te guiamos durante todo el proceso sin importar tu ubicación.",
   },
   {
     question: "¿Qué pasa si mi marca ya está registrada?",
@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "¿Qué incluye exactamente el servicio de registro?",
     answer:
-      "Nuestro servicio incluye evaluación inicial, búsqueda de antecedentes, preparacion y presentacion de la solicitud ante la USPTO, seguimiento del proceso y respuesta a requerimientos oficiales. Te acompanamos hasta obtener una resolucion.",
+      "Nuestro servicio incluye evaluación inicial, búsqueda de antecedentes, preparación y presentación de la solicitud ante la USPTO, seguimiento del proceso y respuesta a requerimientos oficiales. Te acompañamos hasta obtener una resolución.",
   },
 ];
 
@@ -60,7 +60,7 @@ export const FaqSection = () => {
           </h2>
 
           <p className="mt-3 text-lg text-muted-foreground">
-            Resolvemos las dudas mas comunes sobre el registro de marcas en USA.
+            Resolvemos las dudas más comunes sobre el registro de marcas en USA.
           </p>
         </div>
 
